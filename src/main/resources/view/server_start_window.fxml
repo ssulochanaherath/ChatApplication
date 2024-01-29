@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="650.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ServerStartWindowFormController">
+    <children>
+        <ImageView fx:id="imgLogo" fitHeight="157.0" fitWidth="200.0" layoutX="116.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/Logo.jpeg" />
+            </image>
+        </ImageView>
+        <Label layoutX="86.0" layoutY="252.0" text="whirl" textFill="#9a9a9a">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="252.0" text="Wind" textFill="#6600ff">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="loginBtn" layoutX="140.0" layoutY="557.0" onAction="#loginBtnOnAction" style="-fx-border-color: 1F2544;" styleClass="calendar" stylesheets="@../styles/btn.css" text="Get Started">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
