@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoadingWindowPageFormController">
+    <children>
+        <ImageView fx:id="imgLogo" fitHeight="182.0" fitWidth="204.0" layoutX="95.0" layoutY="90.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/Logo.jpeg" />
+            </image>
+        </ImageView>
+        <Label layoutX="87.0" layoutY="280.0" text="whirl" textFill="#9a9a9a">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="280.0" text="WInd" textFill="#6600ff">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <ProgressBar fx:id="prgBar" layoutX="31.0" layoutY="565.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="339.0" progress="0.31" />
+        <Label layoutX="170.0" layoutY="592.0" text="Loading.." />
+    </children>
+</AnchorPane>
