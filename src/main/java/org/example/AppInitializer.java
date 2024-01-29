@@ -1,2 +1,4 @@
-package org.example;public class AppInitializer {
+package org.example;
+
+public class AppInitializer {
 }

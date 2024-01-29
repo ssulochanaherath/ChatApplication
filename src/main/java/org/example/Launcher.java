@@ -1,2 +1,4 @@
-package org.example;public class Launcher {
+package org.example;
+
+public class Launcher {
 }
