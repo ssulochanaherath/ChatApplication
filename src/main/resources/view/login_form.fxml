@@ -27,7 +27,7 @@
             </font>
         </Label>
         <JFXTextField fx:id="txtUser" focusColor="#637a9f" labelFloat="true" layoutX="96.0" layoutY="481.0" prefHeight="26.0" prefWidth="208.0" promptText="Username" unFocusColor="#637a9f" />
-        <JFXButton layoutX="135.0" layoutY="539.0" onAction="#btnJoinOnAction" prefHeight="35.0" prefWidth="117.0" stylesheets="@../../../../../../chatApplication/src/main/resources/Styles/btn.css" text="Login" textFill="#637a9f">
+        <JFXButton layoutX="135.0" layoutY="539.0" onAction="#btnJoinOnAction" prefHeight="35.0" prefWidth="117.0" stylesheets="@../ChatApplication/src/main/resources/styles/btn.css" text="Login" textFill="#637a9f">
             <styleClass>
                 <String fx:value="calendar" />
                 <String fx:value="border" />

@@ -93,11 +93,6 @@ public class ClientWindowFormController implements Initializable {
     }
 
     @FXML
-    void btnEmojiOnAction(ActionEvent event) {
-        emojiAnchorpane.setVisible(!emojiAnchorpane.isVisible());
-    }
-
-    @FXML
     void btnSendOnAction(ActionEvent event) {
         try {
             String text = txtMsgArea.getText();
@@ -200,5 +195,9 @@ public class ClientWindowFormController implements Initializable {
     private void emojiButtonAction(ActionEvent event) {
         JFXButton button = (JFXButton) event.getSource();
         txtMsgArea.appendText(button.getText());
+    }
+
+    public void btnImojiOnAction(ActionEvent event) {
+        emojiAnchorpane.setVisible(!emojiAnchorpane.isVisible());
     }
 }

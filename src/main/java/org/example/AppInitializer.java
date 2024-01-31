@@ -13,8 +13,8 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/loading_window_page_form.fxml"))));
-        Image icon = new Image(getClass().getResourceAsStream("/image/logo.png"));
+        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/loading_window_form.fxml"))));
+        Image icon = new Image(getClass().getResourceAsStream("/images/Logo.jpeg"));
         stage.getIcons().add(icon);
         stage.setTitle("openChat");
         stage.show();

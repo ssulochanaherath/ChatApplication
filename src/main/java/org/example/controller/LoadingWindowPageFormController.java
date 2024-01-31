@@ -57,19 +57,19 @@ public class LoadingWindowPageFormController implements Initializable {
 
             Parent loginParent = null;
             try {
-                loginParent = FXMLLoader.load(getClass().getResource("/view/server_start_window_form.fxml"));
+                loginParent = FXMLLoader.load(getClass().getResource("/view/server_start_window.fxml"));
 
                 Scene loginScene = new Scene(loginParent);
                 Stage loginStage = new Stage();
                 loginStage.setResizable(false);
-                Image icon = new Image(getClass().getResourceAsStream("/image/logo.png"));
+                Image icon = new Image(getClass().getResourceAsStream("/images/Logo.jpeg"));
                 loginStage.getIcons().add(icon);
                 loginStage.setTitle("WhisperWave");
                 loginStage.setScene(loginScene);
                 loginStage.show();
-                new Thread(() -> {
-                    playSound("media/loading.mp3");
-                }).start();
+//                new Thread(() -> {
+//                    playSound("media/loading.mp3");
+//                }).start();
 
                 // Close the welcome stage
                 ((Stage) prgBar.getScene().getWindow()).close();
@@ -84,7 +84,9 @@ public class LoadingWindowPageFormController implements Initializable {
         try {
             new Player(new BufferedInputStream(getClass().getClassLoader().getResourceAsStream(sound))).play();
         } catch (JavaLayerException e) {
-            new Alert(Alert.AlertType.ERROR, "Audio not available").show();
+            //new Alert(Alert.AlertType.ERROR, "Audio not available").show();
         }
     }
+
+
 }

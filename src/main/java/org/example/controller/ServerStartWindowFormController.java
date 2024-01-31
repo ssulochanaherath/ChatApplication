@@ -30,7 +30,7 @@ public class ServerStartWindowFormController {
 
             root.getChildren().clear();
             Stage stage = (Stage) root.getScene().getWindow();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_window_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_form.fxml"))));
             stage.show();
             stage.setOnCloseRequest(e-> {
                 System.exit(0);
