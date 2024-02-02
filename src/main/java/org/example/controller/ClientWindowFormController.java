@@ -196,8 +196,7 @@ public class ClientWindowFormController implements Initializable {
         JFXButton button = (JFXButton) event.getSource();
         txtMsgArea.appendText(button.getText());
     }
-
-    public void btnImojiOnAction(ActionEvent event) {
+    public void btnEmojiOnAction(ActionEvent event) {
         emojiAnchorpane.setVisible(!emojiAnchorpane.isVisible());
     }
 }

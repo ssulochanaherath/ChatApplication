@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
@@ -20,17 +21,48 @@
                 <Image url="@../images/chats_wallpaper.jpg" />
             </image>
         </ImageView>
-        <Label layoutX="121.0" layoutY="14.0" text="Whirl" textFill="#d9edbf">
+        <Label layoutX="135.0" layoutY="14.0" text="whirl" textFill="#9a9a9a">
             <font>
                 <Font size="31.0" />
             </font>
         </Label>
-        <Label layoutX="202.0" layoutY="14.0" text="wind" textFill="#80bcbd">
+        <Label layoutX="213.0" layoutY="14.0" text="Wind" textFill="#6600ff">
             <font>
                 <Font size="31.0" />
             </font>
         </Label>
-        <ScrollPane fx:id="scrollPane" layoutX="15.0" layoutY="76.0" prefHeight="506.0" prefWidth="373.0" />
+        <ScrollPane fx:id="scrollPane" layoutX="15.0" layoutY="76.0" prefHeight="506.0" prefWidth="373.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="501.0" prefWidth="369.0" />
+            </content>
+        </ScrollPane>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="598.0" onAction="#imageOnAction" prefHeight="32.0" prefWidth="32.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/camera.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="60.0" layoutY="598.0" onAction="#btnEmojiOnAction" prefHeight="32.0" prefWidth="32.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/smile.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="342.0" layoutY="596.0" onAction="#btnSendOnAction" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: #6600ff;" styleClass="calendar" stylesheets="@../styles/btn.css" textFill="#6600ff">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/send.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
         <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#bebebe" height="39.0" layoutX="106.0" layoutY="597.0" stroke="#bebebe" strokeType="INSIDE" width="225.0" />
         <JFXTextField fx:id="txtMsgArea" layoutX="116.0" layoutY="600.0" prefHeight="33.0" prefWidth="208.0" unFocusColor="#bebebe">
             <font>
@@ -55,23 +87,5 @@
                     </rowConstraints>
                 </GridPane>
             </children></AnchorPane>
-      <JFXButton layoutX="15.0" layoutY="597.0" onAction="#imageOnAction" prefHeight="39.0" prefWidth="38.0" />
-      <JFXButton layoutX="67.0" layoutY="597.0" onAction="#btnImojiOnAction" prefHeight="39.0" prefWidth="38.0" />
-      <JFXButton layoutX="339.0" layoutY="597.0" onAction="#btnSendOnAction" prefHeight="39.0" prefWidth="38.0" />
-      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="20.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/camera.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="70.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/smile.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="342.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/send.png" />
-         </image>
-      </ImageView>
     </children>
 </AnchorPane>
